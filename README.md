@@ -114,7 +114,7 @@ Bite-and-Book/
 ### Frontend
 Contains all website pages and client-side files.
 
-- **Pages:** HTML files for the eight main website sections.
+- ** HTML files for the eight main website sections.
 - **CSS:** Stylesheets for website design and responsive layouts.
 - **JS:** JavaScript files for interactive features.
 - **Assets:** Images, icons, and fonts used throughout the website.
