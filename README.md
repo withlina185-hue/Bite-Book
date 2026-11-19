@@ -69,14 +69,14 @@ Bite-and-Book/
 │
 ├── frontend/
 │   │
-│   ├── index.html
+│   ├── home.html
 │   ├── menu.html
 │   ├── build-meal.html
 │   ├── reservation.html
 │   ├── subscription.html
 │   ├── about.html
 │   ├── login.html
-│   ├── admin-dashboard.html
+│   ├── account.html
 │   │
 │   ├── css/
 │   │   ├── style.css
