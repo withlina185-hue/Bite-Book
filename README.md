@@ -87,7 +87,7 @@ Bite-and-Book/
 │   ├── js/
 │   │   ├── main.js
 │   │   ├── build-meal.js #lina
-    │   │── account.js    #lina
+|   │   │── account.js    #lina
 │   │   └── reservation.js
 │   │
 │   └── assets/
