@@ -39,7 +39,7 @@
   gap: 12px;
 }
 .bite-header nav { margin-left: auto; }
-.bite-header nav a, .bite-header .login-link {
+.bite-header nav a, .bite-header nav span, .bite-header .login-link {
   display: grid;
   place-content: center;
   min-height: 36px;
@@ -54,8 +54,8 @@
 }
 .bite-header .login-link { min-width: 74px; background: #c8d4bb; }
 .bite-header nav a[aria-current], .bite-header nav a:hover,
-.bite-header .login-link:hover, .bite-header .bag[aria-current] { background: #a5b194; }
-.brand img { display: block; width: 76px; height: 66px; object-fit: cover; }
+.bite-header .bag[aria-current] { background: #a5b194; }
+.brand img { display: block; width: 76px; height: 66px; object-fit: contain; }
 .bite-header .bag {
   display: grid;
   place-items: center;
