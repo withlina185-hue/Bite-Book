@@ -71,20 +71,23 @@ Bite-and-Book/
 │   │
 │   ├── home.html
 │   ├── menu.html
-│   ├── build-meal.html
+│   ├── build-meal.html  #lina
 │   ├── reservation.html
 │   ├── subscription.html
 │   ├── about.html
 │   ├── login.html
-│   ├── account.html
+│   ├── account.html  #lina
 │   │
 │   ├── css/
 │   │   ├── style.css
 │   │   └── responsive.css
+│   │   │── bite-pages.css  #lina
+|   |   └── bite-responsive.css #lina
 │   │
 │   ├── js/
 │   │   ├── main.js
-│   │   ├── build-meal.js
+│   │   ├── build-meal.js #lina
+    │   │── account.js    #lina
 │   │   └── reservation.js
 │   │
 │   └── assets/
