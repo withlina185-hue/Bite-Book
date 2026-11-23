@@ -92,8 +92,8 @@ Bite-and-Book/
 │   │
 │   └── assets/
 │       ├── images/
-│       ├── icons/
-│       └── fonts/
+│       
+│       
 │
 ├── backend/
 │   │
