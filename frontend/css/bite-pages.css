@@ -1,0 +1,126 @@
+.bite-pages {
+  --cream: #f6f2eb;
+  --paper: #fffdf8;
+  --green: #535e46;
+  --brown: #654332;
+  --line: #e5dfd1;
+  --muted: #615c51;
+  margin: 0;
+  background: var(--cream);
+  color: var(--green);
+  font: 15px/1.5 system-ui, sans-serif;
+}
+.bite-pages * { box-sizing: border-box; }
+.bite-pages [hidden] { display: none !important; }
+.bite-pages a { color: inherit; text-decoration: none; }
+.bite-pages button { font: inherit; cursor: pointer; }
+.bite-pages button:disabled { opacity: .5; cursor: default; }
+.bite-pages :focus-visible { outline: 2px solid var(--brown); outline-offset: 3px; }
+.bite-pages h1, .bite-pages h2, .bite-pages h3, .bite-pages p { margin: 0; }
+.bite-pages h1 { color: #523027; font: bold clamp(2.35rem, 5vw, 4.1rem)/1.05 Georgia, serif; margin: .2em 0 .13em; }
+.bite-pages h2 { font-size: 1.18rem; }
+.bite-pages h3 { font-size: .98rem; }
+.bite-header {
+  min-height: 71px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 clamp(12px, 9vw, 116px) 0 10px;
+  background: #f6f3ed;
+  border-bottom: 2px solid #535e46;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.bite-header nav, .header-actions, .brand, .inline-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.bite-header nav { margin-left: auto; }
+.bite-header nav a, .bite-header nav span, .bite-header .login-link {
+  display: grid;
+  place-content: center;
+  min-height: 36px;
+  min-width: 65px;
+  padding: 5px 12px;
+  border-radius: 16px;
+  color: var(--brown);
+  font-size: .76rem;
+  line-height: 1.15;
+  font-weight: 700;
+  text-align: center;
+}
+.bite-header .login-link { min-width: 74px; background: #c8d4bb; }
+.bite-header nav a[aria-current], .bite-header nav a:hover,
+.bite-header .bag[aria-current] { background: #a5b194; }
+.brand img { display: block; width: 76px; height: 66px; object-fit: contain; }
+.bite-header .bag {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 13px;
+  color: var(--green);
+}
+.bite-header .bag:hover { background: #dce4d2; }
+.bite-main { width: min(92%, 1280px); min-height: 75vh; margin: auto; padding: 54px 0 66px; }
+.page-heading { display: flex; justify-content: space-between; align-items: end; flex-wrap: wrap; gap: 18px; margin-bottom: 30px; }
+.page-heading p, .step-title p, .profile small, .meal-types small { color: var(--muted); }
+.bite-pages .eyebrow { color: var(--brown); text-transform: uppercase; font-size: .76rem; letter-spacing: .16em; font-weight: 750; }
+.bite-pages .button, .bite-pages .outline { padding: 10px 17px; border-radius: 9px; display: inline-block; font-weight: 700; }
+.bite-pages .button { background: var(--green); border: 1px solid var(--green); color: white; }
+.bite-pages .outline { border: 1px solid #b1c0ab; }
+.bite-pages .panel { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+.account-grid, .builder-grid { display: grid; gap: 22px; align-items: start; }
+.account-grid { grid-template-columns: 220px minmax(0, 1fr); }
+.builder-grid { grid-template-columns: minmax(0, 1.65fr) minmax(290px, 1fr); }
+.profile { text-align: center; }
+.profile small { display: block; }
+.avatar { display: grid; place-items: center; background: #e0e8d8; border-radius: 50%; width: 56px; height: 56px; margin: 0 auto 10px; font-weight: 750; }
+.profile nav { display: grid; gap: 4px; border-top: 1px solid var(--line); margin-top: 20px; padding-top: 12px; }
+.profile button, .categories button { color: var(--green); background: transparent; border: 0; padding: 9px; }
+.profile button { text-align: left; border-radius: 7px; }
+.profile button[aria-pressed=true] { color: white; background: var(--green); }
+.bite-pages .reservation { color: white; background: var(--green); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+.reservation h2 { margin: 8px 0 4px; font-size: 1.5rem; }
+.reservation .eyebrow { color: #e1b69f; }
+.account-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 16px 0; }
+.card-heading, .total, .ingredient, .selection li { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.card-heading { margin-bottom: 15px; }
+.card-heading a, .bite-pages .text-button, #view-bag { background: none; border: 0; color: var(--brown); text-decoration: underline; padding: 0; }
+.plan { background: #e0e8d8; border-radius: 12px; padding: 3px 8px; font-size: .75rem; }
+.large { font-size: 1.7rem; }
+.bite-pages progress { width: 100%; accent-color: var(--brown); }
+.favorites { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.favorites a { border: 1px solid var(--line); border-radius: 9px; padding: 12px; }
+.steps { display: flex; flex-wrap: wrap; gap: 24px; margin: 0; padding-left: 18px; color: var(--muted); }
+.builder-controls { display: grid; gap: 18px; min-width: 0; }
+.step-title { display: flex; gap: 12px; align-items: start; margin-bottom: 18px; }
+.step-title span { display: grid; place-items: center; background: var(--green); color: white; border-radius: 50%; width: 32px; height: 32px; flex-shrink: 0; }
+.meal-types { border: 0; margin: 0; padding: 0; min-width: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.meal-types label { display: grid; gap: 5px; align-content: start; padding: 12px; border: 1px solid var(--line); border-radius: 10px; cursor: pointer; }
+.meal-types label:has(:checked) { border-color: var(--green); background: #eef1e8; }
+.meal-types input { margin: 0; accent-color: var(--green); }
+.categories { display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+.categories button[aria-pressed=true] { border-bottom: 2px solid var(--brown); font-weight: 700; }
+.ingredient { padding: 12px 6px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.ingredient small { display: block; color: var(--muted); }
+.ingredient button, .selection button, #bag-meals button { border: 1px solid var(--line); background: var(--cream); color: var(--green); border-radius: 6px; min-width: 32px; padding: 4px 8px; }
+.quantity { display: flex; align-items: center; gap: 7px; }
+.meal-preview { background: #efecdf; text-align: center; border-radius: 12px; padding: 18px; color: var(--muted); }
+.plate { width: 105px; height: 79px; margin: 0 auto 8px; background: #fffdfa; border: 7px solid #d8cfb9; border-radius: 50%; display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; padding: 7px; }
+.plate span { border-radius: 45%; }
+.selection { padding: 0; list-style: none; }
+.selection li { padding: 5px 0; }
+.selection li span:first-child { margin-right: auto; }
+.nutrition { display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px; text-align: center; }
+.nutrition div { background: var(--cream); border-radius: 6px; padding: 5px 2px; font-size: .76rem; }
+.nutrition dd { margin: 0; font-weight: 750; }
+.total { padding: 12px 0; border-top: 1px solid var(--line); }
+.total strong { font: bold 1.4rem Georgia, serif; }
+.add-cart { width: 100%; }
+#meal-status:not(:empty) { margin-top: 8px; }
+#bag-meals li { margin-bottom: 9px; }
+.bite-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 35px 4%; color: white; background: var(--green); }
