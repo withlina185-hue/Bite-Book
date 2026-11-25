@@ -174,3 +174,63 @@ showPanel(location.hash.slice(1));
 renderBag();
 
 loadOrders().catch(error => { orderStatus.textContent = error.message; });
+
+
+const favoritesKey = "bite-and-book.favorites";
+
+function renderFavorites() {
+  let favorites = [];
+  try {
+    const saved = JSON.parse(localStorage.getItem(favoritesKey) ?? "[]");
+    if (Array.isArray(saved)) {
+      favorites = saved.filter(dish => dish && typeof dish.id === "string"
+        && typeof dish.title === "string" && typeof dish.type === "string");
+    }
+  } catch {
+    // A fresh browser or disabled storage has no saved dishes.
+  }
+
+  for (const list of document.querySelectorAll(".account-content .favorites")) {
+    const visible = list.closest("#favorites") ? favorites : favorites.slice(0, 3);
+    if (!visible.length) {
+      list.textContent = "No favorites yet.";
+      continue;
+    }
+    list.replaceChildren(...visible.map(dish => {
+      const link = document.createElement("a");
+      link.href = "build-meal.html?recipe=" + encodeURIComponent(dish.id);
+      const photo = window.biteRecipePhotos?.[dish.id];
+      if (photo) {
+        const image = document.createElement("img");
+        image.src = photo;
+        image.alt = "";
+        image.width = 112;
+        image.height = 84;
+        image.loading = "lazy";
+        link.append(image);
+      }
+      link.className = "favorite-dish";
+      const labels = document.createElement("span");
+      const title = document.createElement("strong");
+      title.textContent = dish.title;
+      const type = document.createElement("small");
+      const stats = window.biteRecipeStats?.[dish.id];
+      type.textContent = stats
+        ? `${stats.calories} kcal · ${orderMoney(stats.cents, "JOD")}`
+        : dish.type;
+      labels.append(title, type);
+      const arrow = document.createElement("span");
+      arrow.className = "favorite-arrow";
+      arrow.textContent = "→";
+      arrow.setAttribute("aria-hidden", "true");
+      link.append(labels, arrow);
+      return link;
+    }));
+  }
+}
+
+renderFavorites();
+window.addEventListener("pageshow", renderFavorites);
+window.addEventListener("storage", event => {
+  if (event.key === favoritesKey || event.key === null) renderFavorites();
+});

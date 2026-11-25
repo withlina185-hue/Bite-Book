@@ -1,0 +1,804 @@
+{
+  "smoky-beef": {
+    "title": "Smoky Beef Bowl",
+    "type": "Bowl",
+    "ingredients": {
+      "Beef": 110,
+      "Brown Rice": 130,
+      "Broccoli": 60,
+      "Smoky BBQ": 20
+    }
+  },
+  "garden": {
+    "title": "Green Goddess Salad",
+    "type": "Salad",
+    "ingredients": {
+      "Mixed Greens": 100,
+      "Cucumber": 60,
+      "Avocado": 60,
+      "Pumpkin Seeds": 10,
+      "Garlic Yogurt": 30
+    }
+  },
+  "halloumi": {
+    "title": "Grilled Halloumi Sandwich",
+    "type": "Sandwich",
+    "ingredients": {
+      "Ciabatta": 100,
+      "Halloumi": 70,
+      "Roasted Peppers": 40,
+      "Basil Pesto": 20
+    }
+  },
+  "shawarma": {
+    "title": "Chicken Shawarma Wrap",
+    "type": "Wrap",
+    "ingredients": {
+      "Whole Wheat Wrap": 80,
+      "Chicken Shawarma": 120,
+      "Pickled Cucumbers": 30,
+      "Garlic Sauce": 20
+    }
+  },
+  "mushroom": {
+    "title": "Creamy Mushroom Pasta",
+    "type": "Pasta",
+    "ingredients": {
+      "Whole Wheat Pasta": 170,
+      "Mushrooms": 80,
+      "Parmesan": 20,
+      "Garlic Yogurt": 40
+    }
+  },
+  "salmon": {
+    "title": "Grilled Salmon Plate",
+    "type": "Grill Plate",
+    "ingredients": {
+      "Salmon": 160,
+      "Roasted Potatoes": 120,
+      "Grilled Zucchini": 80,
+      "Lemon Dressing": 30
+    }
+  },
+  "mezze": {
+    "title": "Falafel Mezze Plate",
+    "type": "Mezze Plate",
+    "ingredients": {
+      "Falafel": 100,
+      "Hummus": 80,
+      "Pita Bread": 70,
+      "Cherry Tomatoes": 40
+    }
+  },
+  "brownie": {
+    "title": "Brownie Sundae",
+    "type": "Dessert",
+    "ingredients": {
+      "Chocolate Brownie": 90,
+      "Vanilla Ice Cream": 90,
+      "Strawberries": 60,
+      "Chocolate Sauce": 20
+    }
+  },
+  "chicken-shawarma-bowl": {
+    "title": "Chicken Shawarma Bowl",
+    "type": "Bowl",
+    "ingredients": {
+      "Chicken Shawarma": 120,
+      "Basmati Rice": 130,
+      "Pickled Cucumbers": 30,
+      "Garlic Sauce": 20
+    }
+  },
+  "greek-feta-salad": {
+    "title": "Greek Feta Salad",
+    "type": "Salad",
+    "ingredients": {
+      "Feta": 60,
+      "Cucumber": 90,
+      "Cherry Tomatoes": 80,
+      "Black Olives": 20,
+      "Lemon Dressing": 20
+    }
+  },
+  "chicken-pesto-sandwich": {
+    "title": "Chicken Pesto Sandwich",
+    "type": "Sandwich",
+    "ingredients": {
+      "Ciabatta": 100,
+      "Chicken": 100,
+      "Basil Pesto": 20,
+      "Arugula": 30
+    }
+  },
+  "grilled-beef-wrap": {
+    "title": "Grilled Beef Wrap",
+    "type": "Wrap",
+    "ingredients": {
+      "Whole Wheat Wrap": 80,
+      "Beef": 110,
+      "Romaine": 30,
+      "Smoky BBQ": 20
+    }
+  },
+  "chicken-basil-pasta": {
+    "title": "Chicken & Basil Pasta",
+    "type": "Pasta",
+    "ingredients": {
+      "Whole Wheat Pasta": 170,
+      "Chicken": 100,
+      "Basil Pesto": 20,
+      "Parmesan": 20
+    }
+  },
+  "grilled-chicken-plate": {
+    "title": "Grilled Chicken Plate",
+    "type": "Grill Plate",
+    "ingredients": {
+      "Chicken": 160,
+      "Roasted Potatoes": 120,
+      "Broccoli": 70,
+      "Garlic Sauce": 20
+    }
+  },
+  "baba-ghanoush-pita": {
+    "title": "Baba Ghanoush & Pita",
+    "type": "Mezze Plate",
+    "ingredients": {
+      "Baba Ghanoush": 120,
+      "Pita Bread": 80,
+      "Black Olives": 30,
+      "Cucumber": 60
+    }
+  },
+  "strawberry-vanilla-cake": {
+    "title": "Strawberry Vanilla Cake",
+    "type": "Dessert",
+    "ingredients": {
+      "Vanilla Cake": 100,
+      "Strawberries": 60,
+      "Whipped Cream": 30,
+      "Berry Compote": 20
+    }
+  },
+  "lemon-chicken-bowl": {
+    "title": "Lemon Chicken Bowl",
+    "type": "Bowl",
+    "ingredients": {
+      "Chicken": 120,
+      "Quinoa": 120,
+      "Broccoli": 60,
+      "Lemon Dressing": 20
+    }
+  },
+  "grilled-chicken-salad": {
+    "title": "Grilled Chicken Salad",
+    "type": "Salad",
+    "ingredients": {
+      "Chicken": 120,
+      "Romaine": 100,
+      "Parmesan": 20,
+      "Croutons": 20
+    }
+  },
+  "beef-roasted-peppers-sandwich": {
+    "title": "Beef & Roasted Peppers Sandwich",
+    "type": "Sandwich",
+    "ingredients": {
+      "Sourdough": 100,
+      "Beef": 100,
+      "Roasted Peppers": 50,
+      "Garlic Sauce": 20
+    }
+  },
+  "garlic-shrimp-wrap": {
+    "title": "Garlic Shrimp Wrap",
+    "type": "Wrap",
+    "ingredients": {
+      "Whole Wheat Wrap": 80,
+      "Shrimp": 100,
+      "Cucumber": 40,
+      "Garlic Sauce": 20
+    }
+  },
+  "roasted-pepper-pasta": {
+    "title": "Roasted Pepper Pasta",
+    "type": "Pasta",
+    "ingredients": {
+      "Whole Wheat Pasta": 170,
+      "Roasted Peppers": 90,
+      "Parmesan": 30,
+      "Basil Pesto": 20
+    }
+  },
+  "grilled-lamb-plate": {
+    "title": "Grilled Lamb Plate",
+    "type": "Grill Plate",
+    "ingredients": {
+      "Grilled Lamb": 150,
+      "Bulgur": 130,
+      "Roasted Peppers": 70,
+      "Tahini": 20
+    }
+  },
+  "labneh-olives": {
+    "title": "Labneh & Olives",
+    "type": "Mezze Plate",
+    "ingredients": {
+      "Labneh": 110,
+      "Black Olives": 40,
+      "Pita Bread": 80,
+      "Cherry Tomatoes": 60
+    }
+  },
+  "banana-pancakes": {
+    "title": "Banana Pancakes",
+    "type": "Dessert",
+    "ingredients": {
+      "Mini Pancakes": 120,
+      "Banana": 70,
+      "Honey": 20,
+      "Whipped Cream": 30
+    }
+  },
+  "salmon-avocado-bowl": {
+    "title": "Salmon & Avocado Bowl",
+    "type": "Bowl",
+    "ingredients": {
+      "Salmon": 120,
+      "Brown Rice": 130,
+      "Avocado": 50,
+      "Cucumber": 40
+    }
+  },
+  "avocado-tuna-salad": {
+    "title": "Avocado Tuna Salad",
+    "type": "Salad",
+    "ingredients": {
+      "Tuna": 110,
+      "Avocado": 60,
+      "Mixed Greens": 90,
+      "Cucumber": 50
+    }
+  },
+  "tuna-cucumber-sandwich": {
+    "title": "Tuna & Cucumber Sandwich",
+    "type": "Sandwich",
+    "ingredients": {
+      "Sourdough": 100,
+      "Tuna": 100,
+      "Cucumber": 50,
+      "Garlic Yogurt": 20
+    }
+  },
+  "spiced-chickpea-wrap": {
+    "title": "Spiced Chickpea Wrap",
+    "type": "Wrap",
+    "ingredients": {
+      "Whole Wheat Wrap": 80,
+      "Chickpeas": 110,
+      "Roasted Peppers": 50,
+      "Harissa": 20
+    }
+  },
+  "shrimp-garlic-pasta": {
+    "title": "Shrimp & Garlic Pasta",
+    "type": "Pasta",
+    "ingredients": {
+      "Whole Wheat Pasta": 170,
+      "Shrimp": 100,
+      "Garlic Sauce": 20,
+      "Cherry Tomatoes": 50
+    }
+  },
+  "garlic-shrimp-plate": {
+    "title": "Garlic Shrimp Plate",
+    "type": "Grill Plate",
+    "ingredients": {
+      "Shrimp": 150,
+      "Basmati Rice": 130,
+      "Grilled Zucchini": 70,
+      "Garlic Sauce": 20
+    }
+  },
+  "muhammara-halloumi": {
+    "title": "Muhammara & Halloumi",
+    "type": "Mezze Plate",
+    "ingredients": {
+      "Muhammara": 100,
+      "Halloumi": 70,
+      "Pita Bread": 80,
+      "Cucumber": 50
+    }
+  },
+  "blueberry-yogurt": {
+    "title": "Blueberry Yogurt",
+    "type": "Dessert",
+    "ingredients": {
+      "Greek Yogurt": 130,
+      "Blueberries": 60,
+      "Granola": 30,
+      "Honey": 20
+    }
+  },
+  "spiced-shrimp-bowl": {
+    "title": "Spiced Shrimp Bowl",
+    "type": "Bowl",
+    "ingredients": {
+      "Shrimp": 120,
+      "Basmati Rice": 130,
+      "Roasted Peppers": 50,
+      "Harissa": 20
+    }
+  },
+  "shrimp-greens-salad": {
+    "title": "Shrimp & Greens Salad",
+    "type": "Salad",
+    "ingredients": {
+      "Shrimp": 100,
+      "Arugula": 80,
+      "Cherry Tomatoes": 60,
+      "Lemon Dressing": 20
+    }
+  },
+  "turkey-mozzarella-sandwich": {
+    "title": "Turkey & Mozzarella Sandwich",
+    "type": "Sandwich",
+    "ingredients": {
+      "Ciabatta": 100,
+      "Turkey": 90,
+      "Mozzarella": 60,
+      "Romaine": 30
+    }
+  },
+  "halloumi-spinach-wrap": {
+    "title": "Halloumi & Spinach Wrap",
+    "type": "Wrap",
+    "ingredients": {
+      "Whole Wheat Wrap": 80,
+      "Halloumi": 80,
+      "Baby Spinach": 50,
+      "Garlic Yogurt": 20
+    }
+  },
+  "salmon-spinach-pasta": {
+    "title": "Salmon & Spinach Pasta",
+    "type": "Pasta",
+    "ingredients": {
+      "Whole Wheat Pasta": 170,
+      "Salmon": 100,
+      "Baby Spinach": 60,
+      "Garlic Yogurt": 30
+    }
+  },
+  "beef-potatoes-plate": {
+    "title": "Beef & Potatoes Plate",
+    "type": "Grill Plate",
+    "ingredients": {
+      "Beef": 150,
+      "Roasted Potatoes": 130,
+      "Carrots": 70,
+      "Smoky BBQ": 20
+    }
+  },
+  "falafel-tahini-mezze": {
+    "title": "Falafel & Tahini Mezze",
+    "type": "Mezze Plate",
+    "ingredients": {
+      "Falafel": 110,
+      "Tahini": 30,
+      "Pita Bread": 70,
+      "Pickled Cucumbers": 40
+    }
+  },
+  "mango-yogurt": {
+    "title": "Mango Yogurt",
+    "type": "Dessert",
+    "ingredients": {
+      "Greek Yogurt": 130,
+      "Mango": 70,
+      "Crushed Pistachios": 20,
+      "Honey": 20
+    }
+  },
+  "chickpea-quinoa-bowl": {
+    "title": "Chickpea Quinoa Bowl",
+    "type": "Bowl",
+    "ingredients": {
+      "Chickpeas": 100,
+      "Quinoa": 120,
+      "Cherry Tomatoes": 50,
+      "Tahini": 20
+    }
+  },
+  "lentil-spinach-salad": {
+    "title": "Lentil & Spinach Salad",
+    "type": "Salad",
+    "ingredients": {
+      "Lentils": 110,
+      "Baby Spinach": 90,
+      "Carrots": 50,
+      "Balsamic Vinaigrette": 20
+    }
+  },
+  "egg-avocado-sandwich": {
+    "title": "Egg & Avocado Sandwich",
+    "type": "Sandwich",
+    "ingredients": {
+      "Sourdough": 100,
+      "Boiled Egg": 70,
+      "Avocado": 60,
+      "Baby Spinach": 20
+    }
+  },
+  "turkey-avocado-wrap": {
+    "title": "Turkey & Avocado Wrap",
+    "type": "Wrap",
+    "ingredients": {
+      "Whole Wheat Wrap": 80,
+      "Turkey": 100,
+      "Avocado": 60,
+      "Romaine": 30
+    }
+  },
+  "beef-tomato-pasta": {
+    "title": "Beef & Tomato Pasta",
+    "type": "Pasta",
+    "ingredients": {
+      "Whole Wheat Pasta": 170,
+      "Beef": 100,
+      "Cherry Tomatoes": 80,
+      "Parmesan": 20
+    }
+  },
+  "halloumi-vegetables-plate": {
+    "title": "Halloumi & Vegetables Plate",
+    "type": "Grill Plate",
+    "ingredients": {
+      "Halloumi": 100,
+      "Grilled Zucchini": 100,
+      "Roasted Peppers": 70,
+      "Lemon Dressing": 20
+    }
+  },
+  "chickpeas-pickles-mezze": {
+    "title": "Chickpeas & Pickles Mezze",
+    "type": "Mezze Plate",
+    "ingredients": {
+      "Chickpeas": 100,
+      "Pickled Cucumbers": 50,
+      "Pickled Onions": 30,
+      "Hummus": 60
+    }
+  },
+  "pistachio-sundae": {
+    "title": "Pistachio Sundae",
+    "type": "Dessert",
+    "ingredients": {
+      "Vanilla Ice Cream": 120,
+      "Crushed Pistachios": 30,
+      "Caramel Sauce": 20,
+      "Whipped Cream": 30
+    }
+  },
+  "roasted-vegetable-bowl": {
+    "title": "Roasted Vegetable Bowl",
+    "type": "Bowl",
+    "ingredients": {
+      "Grilled Zucchini": 80,
+      "Roasted Peppers": 70,
+      "Bulgur": 130,
+      "Hummus": 40
+    }
+  },
+  "halloumi-arugula-salad": {
+    "title": "Halloumi & Arugula Salad",
+    "type": "Salad",
+    "ingredients": {
+      "Halloumi": 80,
+      "Arugula": 90,
+      "Roasted Peppers": 50,
+      "Balsamic Vinaigrette": 20
+    }
+  },
+  "falafel-tahini-sandwich": {
+    "title": "Falafel & Tahini Sandwich",
+    "type": "Sandwich",
+    "ingredients": {
+      "Pita Bread": 80,
+      "Falafel": 90,
+      "Pickled Cucumbers": 40,
+      "Tahini": 20
+    }
+  },
+  "roasted-vegetable-wrap": {
+    "title": "Roasted Vegetable Wrap",
+    "type": "Wrap",
+    "ingredients": {
+      "Whole Wheat Wrap": 80,
+      "Grilled Zucchini": 70,
+      "Roasted Peppers": 50,
+      "Hummus": 40
+    }
+  },
+  "mozzarella-pesto-pasta": {
+    "title": "Mozzarella & Pesto Pasta",
+    "type": "Pasta",
+    "ingredients": {
+      "Whole Wheat Pasta": 170,
+      "Mozzarella": 60,
+      "Basil Pesto": 30,
+      "Cherry Tomatoes": 50
+    }
+  },
+  "turkey-bulgur-plate": {
+    "title": "Turkey & Bulgur Plate",
+    "type": "Grill Plate",
+    "ingredients": {
+      "Turkey": 150,
+      "Bulgur": 130,
+      "Broccoli": 70,
+      "Garlic Yogurt": 30
+    }
+  },
+  "feta-cucumber-mezze": {
+    "title": "Feta & Cucumber Mezze",
+    "type": "Mezze Plate",
+    "ingredients": {
+      "Feta": 80,
+      "Cucumber": 100,
+      "Pita Bread": 80,
+      "Black Olives": 30
+    }
+  },
+  "caramel-brownie": {
+    "title": "Caramel Brownie",
+    "type": "Dessert",
+    "ingredients": {
+      "Chocolate Brownie": 100,
+      "Caramel Sauce": 20,
+      "Vanilla Ice Cream": 70,
+      "Dark Chocolate Chips": 20
+    }
+  },
+  "halloumi-bulgur-bowl": {
+    "title": "Halloumi Bulgur Bowl",
+    "type": "Bowl",
+    "ingredients": {
+      "Halloumi": 80,
+      "Bulgur": 130,
+      "Cucumber": 50,
+      "Lemon Dressing": 20
+    }
+  },
+  "chickpea-cucumber-salad": {
+    "title": "Chickpea & Cucumber Salad",
+    "type": "Salad",
+    "ingredients": {
+      "Chickpeas": 100,
+      "Cucumber": 100,
+      "Cherry Tomatoes": 60,
+      "Tahini": 20
+    }
+  },
+  "mushroom-parmesan-sandwich": {
+    "title": "Mushroom & Parmesan Sandwich",
+    "type": "Sandwich",
+    "ingredients": {
+      "Ciabatta": 100,
+      "Mushrooms": 100,
+      "Parmesan": 30,
+      "Basil Pesto": 20
+    }
+  },
+  "falafel-pickles-wrap": {
+    "title": "Falafel & Pickles Wrap",
+    "type": "Wrap",
+    "ingredients": {
+      "Whole Wheat Wrap": 80,
+      "Falafel": 100,
+      "Pickled Cucumbers": 40,
+      "Tahini": 20
+    }
+  },
+  "broccoli-parmesan-pasta": {
+    "title": "Broccoli & Parmesan Pasta",
+    "type": "Pasta",
+    "ingredients": {
+      "Whole Wheat Pasta": 170,
+      "Broccoli": 100,
+      "Parmesan": 30,
+      "Garlic Yogurt": 30
+    }
+  },
+  "chicken-shawarma-plate": {
+    "title": "Chicken Shawarma Plate",
+    "type": "Grill Plate",
+    "ingredients": {
+      "Chicken Shawarma": 150,
+      "Roasted Potatoes": 130,
+      "Pickled Cucumbers": 40,
+      "Garlic Sauce": 20
+    }
+  },
+  "roasted-pepper-hummus": {
+    "title": "Roasted Pepper & Hummus",
+    "type": "Mezze Plate",
+    "ingredients": {
+      "Roasted Peppers": 90,
+      "Hummus": 110,
+      "Pita Bread": 80,
+      "Black Olives": 30
+    }
+  },
+  "chocolate-chip-pancakes": {
+    "title": "Chocolate Chip Pancakes",
+    "type": "Dessert",
+    "ingredients": {
+      "Mini Pancakes": 120,
+      "Dark Chocolate Chips": 30,
+      "Chocolate Sauce": 20,
+      "Banana": 60
+    }
+  },
+  "turkey-rice-bowl": {
+    "title": "Turkey Rice Bowl",
+    "type": "Bowl",
+    "ingredients": {
+      "Turkey": 120,
+      "Brown Rice": 130,
+      "Carrots": 60,
+      "Garlic Yogurt": 30
+    }
+  },
+  "sweet-potato-salad": {
+    "title": "Sweet Potato Salad",
+    "type": "Salad",
+    "ingredients": {
+      "Sweet Potato": 130,
+      "Mixed Greens": 90,
+      "Pumpkin Seeds": 20,
+      "Garlic Yogurt": 30
+    }
+  },
+  "hummus-roasted-vegetable-sandwich": {
+    "title": "Hummus & Roasted Vegetable Sandwich",
+    "type": "Sandwich",
+    "ingredients": {
+      "Sourdough": 100,
+      "Hummus": 70,
+      "Grilled Zucchini": 50,
+      "Roasted Peppers": 50
+    }
+  },
+  "salmon-greens-wrap": {
+    "title": "Salmon & Greens Wrap",
+    "type": "Wrap",
+    "ingredients": {
+      "Whole Wheat Wrap": 80,
+      "Salmon": 100,
+      "Mixed Greens": 50,
+      "Lemon Dressing": 20
+    }
+  },
+  "grilled-zucchini-pasta": {
+    "title": "Grilled Zucchini Pasta",
+    "type": "Pasta",
+    "ingredients": {
+      "Whole Wheat Pasta": 170,
+      "Grilled Zucchini": 90,
+      "Basil Pesto": 20,
+      "Parmesan": 20
+    }
+  },
+  "grilled-tofu-plate": {
+    "title": "Grilled Tofu Plate",
+    "type": "Grill Plate",
+    "ingredients": {
+      "Tofu": 150,
+      "Quinoa": 130,
+      "Broccoli": 70,
+      "Harissa": 20
+    }
+  },
+  "lentil-labneh-mezze": {
+    "title": "Lentil & Labneh Mezze",
+    "type": "Mezze Plate",
+    "ingredients": {
+      "Lentils": 100,
+      "Labneh": 90,
+      "Pita Bread": 80,
+      "Cherry Tomatoes": 60
+    }
+  },
+  "berry-cake": {
+    "title": "Berry Cake",
+    "type": "Dessert",
+    "ingredients": {
+      "Vanilla Cake": 100,
+      "Blueberries": 50,
+      "Strawberries": 60,
+      "Berry Compote": 20
+    }
+  },
+  "falafel-rice-bowl": {
+    "title": "Falafel Rice Bowl",
+    "type": "Bowl",
+    "ingredients": {
+      "Falafel": 100,
+      "Basmati Rice": 130,
+      "Pickled Onions": 20,
+      "Tahini": 20
+    }
+  },
+  "salmon-quinoa-salad": {
+    "title": "Salmon & Quinoa Salad",
+    "type": "Salad",
+    "ingredients": {
+      "Salmon": 100,
+      "Quinoa": 80,
+      "Baby Spinach": 90,
+      "Lemon Dressing": 20
+    }
+  },
+  "chicken-garlic-sandwich": {
+    "title": "Chicken & Garlic Sandwich",
+    "type": "Sandwich",
+    "ingredients": {
+      "Ciabatta": 100,
+      "Chicken": 100,
+      "Pickled Cucumbers": 30,
+      "Garlic Sauce": 20
+    }
+  },
+  "tofu-peppers-wrap": {
+    "title": "Tofu & Peppers Wrap",
+    "type": "Wrap",
+    "ingredients": {
+      "Whole Wheat Wrap": 80,
+      "Tofu": 100,
+      "Roasted Peppers": 60,
+      "Basil Pesto": 20
+    }
+  },
+  "harissa-chicken-pasta": {
+    "title": "Harissa Chicken Pasta",
+    "type": "Pasta",
+    "ingredients": {
+      "Whole Wheat Pasta": 170,
+      "Chicken": 100,
+      "Harissa": 20,
+      "Roasted Peppers": 50
+    }
+  },
+  "salmon-quinoa-plate": {
+    "title": "Salmon & Quinoa Plate",
+    "type": "Grill Plate",
+    "ingredients": {
+      "Salmon": 150,
+      "Quinoa": 130,
+      "Baby Spinach": 60,
+      "Lemon Dressing": 20
+    }
+  },
+  "three-dips-mezze": {
+    "title": "Three Dips Mezze",
+    "type": "Mezze Plate",
+    "ingredients": {
+      "Hummus": 70,
+      "Baba Ghanoush": 70,
+      "Muhammara": 70,
+      "Pita Bread": 90
+    }
+  },
+  "honey-granola-yogurt": {
+    "title": "Honey Granola Yogurt",
+    "type": "Dessert",
+    "ingredients": {
+      "Greek Yogurt": 130,
+      "Granola": 40,
+      "Honey": 20,
+      "Banana": 60
+    }
+  }
+}

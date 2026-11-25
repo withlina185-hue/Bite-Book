@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Build Your Meal | Bite &amp; Book</title>
-  <link rel="stylesheet" href="css/bite-pages.css">
+  <link rel="stylesheet" href="css/bite-pages.css?v=8">
   <link rel="stylesheet" href="css/bite-responsive.css">
-  <script src="js/build-meal.js?v=5" defer></script>
+  <script src="js/recipe-photos.js?v=8" defer></script>
+  <script src="js/build-meal.js?v=8" defer></script>
 </head>
 <body class="bite-pages">
   <header class="bite-header">
@@ -22,9 +23,13 @@
   <main class="bite-main">
     <div class="page-heading">
       <div><p class="eyebrow">Build Your Meal</p><h1>Make it exactly yours.</h1><p>Choose your ingredients, control every gram, and see the nutrition update as you build.</p></div>
-      <ol class="steps"><li>Meal type</li><li>Ingredients</li><li>Review</li></ol>
+      <ol class="steps" aria-label="Meal progress" role="list">
+        <li aria-current="step"><span class="step-marker" aria-hidden="true">1</span><span>Meal type</span></li>
+        <li><span class="step-marker" aria-hidden="true">2</span><span>Ingredients</span></li>
+        <li><span class="step-marker" aria-hidden="true">3</span><span>Review</span></li>
+      </ol>
     </div>
-    <div class="builder-grid">
+    <div class="builder-grid" hidden>
       <div class="builder-controls">
         <section class="panel"><div class="step-title"><span>1</span><div><h2>Choose your meal type</h2><p>Pick the foundation for your meal.</p></div></div>
           <fieldset class="meal-types" aria-label="Meal type">
@@ -38,7 +43,7 @@
           <div id="ingredients"></div>
         </section>
       </div>
-      <aside class="panel creation" aria-label="Your creation">
+      <aside class="panel creation" aria-label="Your creation" tabindex="-1">
         <div class="card-heading"><div><p class="eyebrow">Your Creation</p><h2 id="meal-name">Custom Bowl</h2></div><button class="text-button" id="clear">Clear all</button></div>
         <div class="meal-preview"><div class="plate" id="plate" aria-hidden="true"></div><p id="weight">0 g total weight</p></div>
         <ul class="selection" id="selection"></ul>

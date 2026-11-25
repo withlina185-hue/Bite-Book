@@ -73,3 +73,29 @@
   position: absolute; top: -5px; right: -7px; border-radius: 20px;
   padding: 1px 5px; background: #985b45; color: #fff; font-size: 11px; font-weight: 700;
 }
+.bite-pages .recipe-filters {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 155px), 1fr));
+  gap: .55rem; margin-bottom: .5rem;
+}
+.bite-pages .recipe-filters label { display: grid; gap: .2rem; font-size: .85rem; }
+.bite-pages .recipe-filters input, .bite-pages .recipe-filters select {
+  width: 100%; min-width: 0; padding: .5rem; font: inherit; color: inherit;
+  border: 1px solid var(--line); border-radius: .5rem; background: var(--paper);
+}
+.bite-pages .recipe-results { margin: .3rem 0 .65rem; font-size: .82rem; }
+.bite-pages .recipe-with-favorite { display: grid; grid-template-rows: 1fr auto; gap: .32rem; min-width: 0; }
+.bite-pages .recipe-with-favorite .recipe-card { align-content: start; }
+.bite-pages .recipe-with-favorite .recipe-art {
+  display: flex; flex-wrap: wrap; align-content: center; justify-content: center; gap: 0;
+  aspect-ratio: 1.6; padding: .2rem; background: #f2ede1;
+}
+.bite-pages .recipe-art .ingredient-photo, .bite-pages .recipe-art .ingredient-illustration { width: 36px; height: 36px; }
+.bite-pages .favorite-button, .bite-pages .recipe-more { color: var(--green); background: var(--paper); }
+.bite-pages .favorite-button[aria-pressed="true"] { color: #923f36; background: #faede7; }
+.bite-pages .recipe-more { margin-top: .7rem; }
+.bite-pages .recipe-picker { margin-bottom: 1rem; }
+.bite-pages .recipe-back { margin-bottom: .8rem; background: var(--paper); color: var(--green); }
+.bite-pages .recipe-gallery { grid-template-columns: repeat(auto-fill, minmax(min(100%, 180px), 1fr)); }
+.bite-pages .recipe-editor-actions { display: flex; flex-wrap: wrap; gap: .55rem; margin-bottom: .8rem; }
+.bite-pages .recipe-editor-actions .recipe-back { margin-bottom: 0; }
+.bite-pages .review-meal { justify-self: start; }
