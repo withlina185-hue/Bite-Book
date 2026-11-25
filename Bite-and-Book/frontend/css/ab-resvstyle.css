@@ -1,0 +1,37 @@
+.olive-mark {
+    background-color: #C9D4BC;
+    color: #2C3325;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+h2 {
+    color: #542D29;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #542D29;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+h2 + p,
+h3 + p {
+    margin-top: 0;
+}
+.resv-fieldset {
+    max-width: 450px;
+    margin: 20px auto;
+    border: 2px solid #414B36;
+    border-radius: 12px;
+    padding: 16px 20px;
+    background-color:#c4d6c4;
+    color:#590d06;
+
+}

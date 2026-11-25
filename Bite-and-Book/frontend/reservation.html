@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reserve a Table - Bite & Book</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ab-resvstyle.css">
+    
+     
+</head>
+<body class="resv-page">
+<div style="background-color:#F8F5EF;width:100%;height:90px;border-bottom:3px solid #414B36;">
+<div style="width:120px;height:150px; ">
+    
+    <img src="image/logo2.jpg" alt="Logo" style="height:90px;width:110px;background-size:cover">
+    <div style="position:relative;top:-100px;left:400px;">
+        <table style="margin-left:310px;margin-top:20px;">
+            <tr>
+                <th><a href="home.html">Home</a></th>
+                <th><a href="menu.html">Menu</a></th>
+                <th><a href="build-meal.html">Build Meal</a></th>
+                <th style="background-color:#A3AD91;"><a href="reservation.html">Reserve Table</a></th>
+                <th><a href="subscription.html">Subscription</a></th>
+                
+                <th><a href="about.html">About</a></th>
+                <th style="background-color:#C9D4BC;"><a href="login.html">Login</a></th>
+            </tr>
+            
+        </table>
+    </div>
+
+</div>
+
+</div>
+<main style= "text-align:center;">
+    <!--Intro Section -->
+    <section>
+        <h1 >Reserve Your Table</h1>
+        <p>Pick your preferred date, time, and guest count—then you can <mark class="olive-mark">pre-order from our menu.</mark></p>
+    </section>
+    <!--Form Section-->
+    <section>
+        <form id="rev_form">
+            <fieldset class="resv-fieldset">
+                <legend><strong>Reservation Info:</strong></legend>
+            
+                <label for="rev_date"><strong>Reservation Date: </strong></label>
+                <input type="date" id="rev_date" name="rev_date"  required><br><br>
+                <label for="rev_time"><strong>Reservation Time: </strong></label>
+                <input type="time" id="rev_time" name="rev_time"  max="23:59"  required><br><br>
+                <label for="num_guest"><strong>Number of Guests: </strong></label>
+                <input type="number" id="num_guest" name="num_guest" min="1" value="1" required><br><br>
+            </fieldset>
+
+            <fieldset class="resv-fieldset">
+                        <legend><strong>Pre-order Food?</strong></legend>
+                        <p>Would you like to choose your dishes from the menu first?</p>
+
+                        <label for="preorder_yes">
+                            <input type="radio" id="preorder_yes" name="preorder_choice" value="yes" checked>
+                            Yes, take me to the <strong>Menu</strong> to pick my food first
+                        </label><br><br>
+
+                        <label for="preorder_no">
+                            <input type="radio" id="preorder_no" name="preorder_choice" value="no">
+                            No, take me to <strong>Login</strong> to complete my reservation
+                        </label><br><br>
+                        <button type="button" id="continue-btn">Continue</button>
+                        <p id="msg"></p>
+            </fieldset>
+        </form>
+
+    </section>
+</main>
+<script src="js/b-reservation.js"></script>
+</body></html>
