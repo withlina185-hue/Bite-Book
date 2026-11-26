@@ -55,9 +55,8 @@ function get(id) {
 }
 
 function money(cents) {
-  return "$" + (cents / 100).toFixed(2);
+  return (cents / 100).toFixed(3) + " JOD";
 }
-
 
 function renderControls() {
   const previousAction = document.activeElement.dataset.action;
@@ -226,12 +225,13 @@ function renderSummary() {
   get("total").textContent = money(finalCents);
   get("add-cart").disabled = items.length === 0;
 
-  return {
-    name: name,
-    grams: totals.grams,
-    cents: finalCents,
-    items: items
-  };
+ return {
+  name: name,
+  grams: totals.grams,
+  cents: finalCents,
+  currency: "JOD",
+  items: items
+};
 }
 
 function update() {
