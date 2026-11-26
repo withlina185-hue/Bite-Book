@@ -59,14 +59,14 @@ function renderBag() {
     const meal = bag[index];
     const row = document.createElement("li");
     const remove = document.createElement("button");
-    const price = (meal.cents / 100).toFixed(2);
+    const price = (meal.cents / 100).toFixed(3);
 
     remove.type = "button";
     remove.dataset.index = index;
     remove.textContent = "Remove";
     remove.setAttribute("aria-label", `Remove ${meal.name} from your bag`);
 
-    row.append(`${meal.name} · ${meal.grams} g · $${price} `, remove);
+    row.append(`${meal.name} · ${meal.grams} g · ${price} JOD `, remove);
     bagList.append(row);
   }
 }
