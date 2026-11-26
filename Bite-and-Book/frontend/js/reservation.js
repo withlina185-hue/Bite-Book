@@ -1,15 +1,1 @@
-@media (max-width: 850px) {
-  .bite-header { position: static; flex-wrap: wrap; justify-content: space-between; gap: 3px 12px; padding: 0 12px 8px; }
-  .bite-header nav { order: 3; width: 100%; margin-left: 0; gap: 4px; justify-content: center; }
-  .bite-header nav a { min-width: 0; padding-inline: 9px; }
-  .bite-main { padding-top: 30px; }
-  .builder-grid, .account-grid { grid-template-columns: 1fr; }
-  .profile nav { display: flex; flex-wrap: wrap; justify-content: center; }
-}
-@media (max-width: 520px) {
-  .account-cards, .favorites { grid-template-columns: 1fr; }
-  .bite-pages .panel { padding: 15px; }
-  .meal-types label { padding: 7px; }
-  .meal-types strong { font-size: .85rem; }
-  .header-actions { gap: 8px; }
-}
+
