@@ -83,16 +83,16 @@ Bite-and-Book/
 │   │   └── responsive.css
 │   │   │── bite-pages.css  #lina
 |   |   └── bite-responsive.css #lina
-│   │   └── bite-meal-preview.css #lina
+│   │   
 │   │
-│   ├── data/
-│   │   ├── recipes.json  lina
+│   │
+│   │   
 │   │
 │   │
 │   ├── js/
 │   │   ├── main.js
-│   │   ├── build-meal.js #lina
-|   │   │── account.js    #lina
+│   │   ├── build-meal.js 
+|   │   │── account.js    
 │   │   └── reservation.js
 │   │
 │   └── assets/
@@ -107,10 +107,10 @@ Bite-and-Book/
 │   ├── register.php
 │   ├── save-reservation.php
 │   ├── save-subscription.php
-│   ├── save-order.php   #lina
+│   ├── save-order.php   
 │   ├── order-api.php
-│   ├── get-orders.php  #lina
-│   └── admin.php   #lina
+│   ├── get-orders.php  
+│   └── admin.php   
 │   
 │
 │
