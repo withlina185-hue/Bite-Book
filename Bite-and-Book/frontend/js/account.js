@@ -1,72 +1,135 @@
 "use strict";
 
 const bagKey = "bite-and-book.bag";
-const panels = [...document.querySelectorAll(".account-content > section")];
-const navigation = [...document.querySelectorAll(".profile [data-panel]")];
+const panels = document.querySelectorAll(".account-content > section");
+const navigation = document.querySelectorAll(".profile [data-panel]");
 const bagList = document.getElementById("bag-meals");
 const bagEmpty = document.getElementById("bag-empty");
 
 function showPanel(id) {
-  const active = panels.some(panel => panel.id === id) ? id : "overview";
-  panels.forEach(panel => { panel.hidden = panel.id !== active; });
-  navigation.forEach(button => {
-    button.setAttribute("aria-pressed", String(button.dataset.panel === active));
-  });
+  let active = "overview";
+
+  for (const panel of panels) {
+    if (panel.id === id) {
+      active = id;
+      break;
+    }
+  }
+
+  for (const panel of panels) {
+    panel.hidden = panel.id !== active;
+  }
+
+  for (const button of navigation) {
+    if (button.dataset.panel === active) {
+      button.setAttribute("aria-pressed", "true");
+    } else {
+      button.setAttribute("aria-pressed", "false");
+    }
+  }
 }
 
 function readBag() {
   try {
-    const data = JSON.parse(localStorage.getItem(bagKey) ?? "[]");
-    return Array.isArray(data) ? data : [];
+    const savedBag = localStorage.getItem(bagKey);
+
+    if (savedBag === null) {
+      return [];
+    }
+
+    const bag = JSON.parse(savedBag);
+
+    if (Array.isArray(bag)) {
+      return bag;
+    }
   } catch {
     return [];
   }
+
+  return [];
 }
 
 function renderBag() {
   const bag = readBag();
+
   bagEmpty.hidden = bag.length > 0;
   bagList.replaceChildren();
-  bag.forEach((meal, index) => {
+
+  for (let index = 0; index < bag.length; index++) {
+    const meal = bag[index];
     const row = document.createElement("li");
     const remove = document.createElement("button");
+    const price = (meal.cents / 100).toFixed(2);
+
     remove.type = "button";
     remove.dataset.index = index;
     remove.textContent = "Remove";
     remove.setAttribute("aria-label", `Remove ${meal.name} from your bag`);
-    row.append(`${meal.name} · ${meal.grams} g · $${(meal.cents / 100).toFixed(2)} `, remove);
+
+    row.append(`${meal.name} · ${meal.grams} g · $${price} `, remove);
     bagList.append(row);
-  });
+  }
 }
 
-document.addEventListener("click", event => {
+document.addEventListener("click", function (event) {
   const button = event.target.closest("[data-panel]");
-  if (!button) return;
+
+  if (button === null) {
+    return;
+  }
+
   const panel = button.dataset.panel;
   location.hash = panel;
-  if (!navigation.includes(button)) {
-    navigation.find(tab => tab.dataset.panel === panel)?.focus();
+
+  for (const tab of navigation) {
+    if (tab.dataset.panel === panel) {
+      if (tab !== button) {
+        tab.focus();
+      }
+      break;
+    }
   }
 });
 
-bagList.addEventListener("click", event => {
+bagList.addEventListener("click", function (event) {
   const button = event.target.closest("[data-index]");
-  if (!button) return;
+
+  if (button === null) {
+    return;
+  }
+
   const bag = readBag();
-  bag.splice(Number(button.dataset.index), 1);
+  const index = Number(button.dataset.index);
+  bag.splice(index, 1);
+
   try {
     localStorage.setItem(bagKey, JSON.stringify(bag));
     renderBag();
-    (bagList.querySelector("button") ?? document.querySelector("#orders a")).focus();
+
+    let nextElement = bagList.querySelector("button");
+
+    if (nextElement === null) {
+      nextElement = document.querySelector("#orders a");
+    }
+
+    if (nextElement !== null) {
+      nextElement.focus();
+    }
   } catch {
     bagEmpty.hidden = false;
     bagEmpty.textContent = "Your bag could not be updated.";
   }
 });
 
-window.addEventListener("hashchange", () => showPanel(location.hash.slice(1)));
-window.addEventListener("storage", event => {
-  if (event.key === bagKey || event.key === null) renderBag();
+window.addEventListener("hashchange", function () {
+  showPanel(location.hash.slice(1));
 });
+
+window.addEventListener("storage", function (event) {
+  if (event.key === bagKey || event.key === null) {
+    renderBag();
+  }
+});
+
 showPanel(location.hash.slice(1));
 renderBag();
