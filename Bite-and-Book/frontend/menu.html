@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Bite & Book</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=DM+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body class="menu-page">
+
+    <!-- Navigation Bar -->
+    <header class="menu-navbar">
+        <a href="home.html">
+            <img src="image/logo2.jpg" alt="Bite & Book Logo">
+        </a>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="build-meal.html">Build Meal</a>
+            <a href="reservation.html">Reserve Table</a>
+            <a href="subscription.html">Subscription</a>
+            <a href="about.html">About</a>
+            <a href="login.html" target="_blank">Login</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="menu-hero">
+
+        <div class="menu-hero-content">
+            <h1>Our Menu</h1>
+
+            <p>
+                Fresh ingredients, delicious meals, and healthy choices.
+                Discover your favorite meal and enjoy every bite!
+            </p>
+        </div>
+
+        <img
+            class="menu-hero-image"
+            src="image/Picture11.png"
+            alt="Fresh pasta"
+>
+
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+
+        <h2>Explore Our Menu</h2>
+
+        <p class="menu-subtitle">
+            Choose from our delicious selection of meals.
+        </p>
+
+        <!-- Categories -->
+        <div class="menu-categories">
+
+            <button class="category-btn active" onclick="filterMeals('all', this)">
+                All Items
+            </button>
+
+            <button class="category-btn" onclick="filterMeals('main', this)">
+                Main Dishes
+            </button>
+
+            <button class="category-btn" onclick="filterMeals('salad', this)">
+                Salads
+            </button>
+
+            <button class="category-btn" onclick="filterMeals('bowl', this)">
+                Healthy Bowls
+            </button>
+
+            <button class="category-btn" onclick="filterMeals('drinks', this)">
+                Drinks
+            </button>
+
+        </div>
+
+        <!-- Meals -->
+        <div class="menu-grid">
+
+            <!-- Meal 1 -->
+            <article class="menu-card" data-category="main">
+
+                <img src="image/r1.jpg" alt="Grilled Beef Medallions">
+
+                <div class="menu-card-content">
+
+                    <h3>Grilled Beef Medallions</h3>
+
+                    <p>
+                        Tender grilled beef served with creamy potato purée.
+                    </p>
+
+                    <div class="meal-price">8.50 JD</div>
+
+                    <div class="meal-nutrition">
+                        <span><strong>460</strong>Calories</span>
+                        <span><strong>50g</strong>Protein</span>
+                        <span><strong>35g</strong>Carbs</span>
+                        <span><strong>18g</strong>Fat</span>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Meal 2 -->
+            <article class="menu-card" data-category="main">
+
+                <img src="image/r2.jpg" alt="Creamy Soup">
+
+                <div class="menu-card-content">
+
+                    <h3>Creamy Soup with Scallop</h3>
+
+                    <p>
+                        Delicious creamy soup with seared scallop and rosemary.
+                    </p>
+
+                    <div class="meal-price">7.00 JD</div>
+
+                    <div class="meal-nutrition">
+                        <span><strong>380</strong>Calories</span>
+                        <span><strong>22g</strong>Protein</span>
+                        <span><strong>40g</strong>Carbs</span>
+                        <span><strong>15g</strong>Fat</span>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Meal 3 -->
+            <article class="menu-card" data-category="main">
+
+                <img src="image/r3.jpg" alt="Spaghetti Carbonara">
+
+                <div class="menu-card-content">
+
+                    <h3>Spaghetti Carbonara</h3>
+
+                    <p>
+                        Creamy spaghetti prepared with delicious ingredients.
+                    </p>
+
+                    <div class="meal-price">6.50 JD</div>
+
+                    <div class="meal-nutrition">
+                        <span><strong>450</strong>Calories</span>
+                        <span><strong>25g</strong>Protein</span>
+                        <span><strong>55g</strong>Carbs</span>
+                        <span><strong>17g</strong>Fat</span>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Meal 4 -->
+            <article class="menu-card" data-category="salad">
+
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800" alt="Fresh Garden Salad">
+
+                <div class="menu-card-content">
+
+                    <h3>Fresh Garden Salad</h3>
+
+                    <p>
+                        Fresh vegetables with a light and delicious dressing.
+                    </p>
+
+                    <div class="meal-price">4.50 JD</div>
+
+                    <div class="meal-nutrition">
+                        <span><strong>220</strong>Calories</span>
+                        <span><strong>8g</strong>Protein</span>
+                        <span><strong>20g</strong>Carbs</span>
+                        <span><strong>12g</strong>Fat</span>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Meal 5 -->
+            <article class="menu-card" data-category="bowl">
+
+                <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=800" alt="Healthy Chicken Bowl">
+
+                <div class="menu-card-content">
+
+                    <h3>Healthy Chicken Bowl</h3>
+
+                    <p>
+                        Grilled chicken with rice and fresh vegetables.
+                    </p>
+
+                    <div class="meal-price">6.00 JD</div>
+
+                    <div class="meal-nutrition">
+                        <span><strong>390</strong>Calories</span>
+                        <span><strong>35g</strong>Protein</span>
+                        <span><strong>42g</strong>Carbs</span>
+                        <span><strong>10g</strong>Fat</span>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Meal 6 -->
+            <article class="menu-card" data-category="drinks">
+
+                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=800" alt="Fresh Juice">
+
+                <div class="menu-card-content">
+
+                    <h3>Fresh Orange Juice</h3>
+
+                    <p>
+                        Freshly squeezed orange juice with no added sugar.
+                    </p>
+
+                    <div class="meal-price">2.00 JD</div>
+
+                    <div class="meal-nutrition">
+                        <span><strong>110</strong>Calories</span>
+                        <span><strong>2g</strong>Protein</span>
+                        <span><strong>26g</strong>Carbs</span>
+                        <span><strong>0g</strong>Fat</span>
+                    </div>
+              
+                </div>
+            </article>
+
+<!-- New Meal 7: Creamy Mushroom Chicken Rice -->
+<article class="menu-card" data-category="main">
+
+    <img src="image/M4.jpg" alt="Creamy Mushroom Chicken Rice">
+
+    <div class="menu-card-content">
+
+        <h3>Creamy Mushroom Chicken Rice</h3>
+
+        <p>
+            Tender chicken and fresh mushrooms served with creamy sauce and rice.
+        </p>
+
+        <div class="meal-price">7.50 JD</div>
+
+        <div class="meal-nutrition">
+            <span><strong>520</strong>Calories</span>
+            <span><strong>38g</strong>Protein</span>
+            <span><strong>55g</strong>Carbs</span>
+            <span><strong>16g</strong>Fat</span>
+        </div>
+
+    </div>
+</article>
+
+
+<!-- New Meal 8: Chicken Biryani -->
+<article class="menu-card" data-category="main">
+
+    <img src="image/M2.jpg" alt="Chicken Biryani">
+
+    <div class="menu-card-content">
+
+        <h3>Chicken Biryani</h3>
+
+        <p>
+            Fragrant basmati rice cooked with tender chicken and aromatic spices.
+        </p>
+
+        <div class="meal-price">7.00 JD</div>
+
+        <div class="meal-nutrition">
+            <span><strong>490</strong>Calories</span>
+            <span><strong>32g</strong>Protein</span>
+            <span><strong>62g</strong>Carbs</span>
+            <span><strong>12g</strong>Fat</span>
+        </div>
+
+    </div>
+</article>
+
+
+
+<article class="menu-card" data-category="main">
+
+    <img src="image/M3.jpg" alt="Tomato Basil Pasta">
+
+    <div class="menu-card-content">
+
+        <h3>Tomato Basil Pasta</h3>
+
+        <p>
+            Delicious pasta with grilled chicken, fresh tomato and creamy sauce.
+        </p>
+
+        <div class="meal-price">5.50 JD</div>
+
+        <div class="meal-nutrition">
+            <span><strong>560</strong>Calories</span>
+            <span><strong>40g</strong>Protein</span>
+            <span><strong>58g</strong>Carbs</span>
+            <span><strong>19g</strong>Fat</span>
+        </div>
+
+    </div>
+</article>
+
+
+<!-- New Meal 10: Avocado Banana Smoothie -->
+<article class="menu-card" data-category="drinks">
+
+    <img src="image/M1.jpg" alt="Avocado Banana Smoothie">
+
+    <div class="menu-card-content">
+
+        <h3>Avocado Banana Smoothie</h3>
+
+        <p>
+            A creamy and refreshing smoothie made with fresh avocado and banana.
+        </p>
+
+        <div class="meal-price">3.50 JD</div>
+
+        <div class="meal-nutrition">
+            <span><strong>250</strong>Calories</span>
+            <span><strong>5g</strong>Protein</span>
+            <span><strong>32g</strong>Carbs</span>
+            <span><strong>13g</strong>Fat</span>
+        </div>
+
+    </div>
+</article>
+
+        </div>
+
+    </section>
+
+    <!-- Build Your Meal Section -->
+    <section class="menu-cta">
+
+        <h2>Create Your Perfect Meal!</h2>
+
+        <p>
+            Choose your favorite ingredients and build a meal
+            that matches your taste and lifestyle.
+        </p>
+
+        <a href="build-meal.html">Build Your Meal</a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color:#414B36; color:#F8F5EF; padding:25px; text-align:center;">
+        <h3 style="color:#F8F5EF;">Bite & Book</h3>
+        <p>Copyright © 2026 Bite & Book. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function filterMeals(category, button) {
+
+            const meals = document.querySelectorAll('.menu-card');
+            const buttons = document.querySelectorAll('.category-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            button.classList.add('active');
+
+            meals.forEach(meal => {
+
+                if (category === 'all' || meal.dataset.category === category) {
+                    meal.style.display = 'block';
+                } else {
+                    meal.style.display = 'none';
+                }
+
+            });
+        }
+    </script>
+
+</body>
+</html>

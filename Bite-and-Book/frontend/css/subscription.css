@@ -1,0 +1,252 @@
+
+/* General */
+.subscription-page {
+    background-color: #F8F5EF;
+    color: #542D29;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+}
+
+/* Navbar */
+.subscription-navbar {
+    width: 100%;
+    min-height: 90px;
+    background-color: #F8F5EF;
+    border-bottom: 3px solid #414B36;
+    padding: 10px 35px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.subscription-navbar img {
+    width: 100px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+}
+
+.subscription-navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.subscription-navbar nav a {
+    text-decoration: none;
+    color: #765641;
+    font-size: 14px;
+    padding: 10px 13px;
+    border-radius: 20px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.subscription-navbar nav a:hover,
+.subscription-navbar nav a.active {
+    background-color: #A3AD91;
+    color: #414B36;
+}
+
+/* Hero */
+.subscription-hero {
+    text-align: center;
+    padding: 65px 20px 45px;
+    background-color: #F8F5EF;
+}
+
+.subscription-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #542D29;
+    margin-bottom: 15px;
+}
+
+.subscription-hero p {
+    color: #765641;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Plans Section */
+.plans-section {
+    padding: 30px 6% 80px;
+}
+
+.plans-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.plans-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #542D29;
+    margin-bottom: 10px;
+}
+
+.plans-heading p {
+    color: #765641;
+    font-size: 16px;
+}
+
+/* Plans Cards */
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1350px;
+    margin: auto;
+    align-items: stretch;
+}
+
+.plan-card {
+    background-color: #FFFFFF;
+    border: 1px solid #D9D5CC;
+    border-radius: 20px;
+    padding: 30px 22px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.plan-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(65, 75, 54, 0.12);
+}
+
+.plan-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #414B36;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.plan-description {
+    color: #765641;
+    font-size: 14px;
+    min-height: 42px;
+}
+
+.plan-price {
+    margin: 20px 0 10px;
+    color: #542D29;
+}
+
+.plan-price span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.plan-price small {
+    font-size: 14px;
+    color: #765641;
+}
+
+.meal-count {
+    background-color: #E9EDE4;
+    color: #414B36;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.plan-card li {
+    color: #765641;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 9px 0;
+    border-bottom: 1px solid #EEEAE3;
+}
+
+.plan-card li::before {
+    content: "✓";
+    color: #414B36;
+    font-weight: bold;
+    margin-right: 9px;
+}
+
+/* Featured Plan */
+.featured-plan {
+    border: 2px solid #414B36;
+    position: relative;
+}
+
+.popular-label {
+    background-color: #414B36;
+    color: #F8F5EF;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    width: fit-content;
+    margin: -42px auto 15px;
+}
+
+/* Buttons */
+.plan-button {
+    display: block;
+    background-color: #414B36;
+    color: #F8F5EF;
+    text-decoration: none;
+    padding: 13px 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.plan-button:hover {
+    background-color: #A3AD91;
+    color: #414B36;
+}
+
+/* Footer */
+.subscription-footer {
+    background-color: #414B36;
+    color: #F8F5EF;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .plans-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 850px) {
+    .subscription-navbar {
+        flex-direction: column;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .plans-container {
+        grid-template-columns: 1fr;
+    }
+
+    .subscription-hero h1 {
+        font-size: 36px;
+    }
+
+    .plans-heading h2 {
+        font-size: 28px;
+    }
+}
