@@ -1,5 +1,5 @@
 
-
+/*Noor Aiman*/
 .menu-page {
     background-color: #F8F5EF;
     color: #542D29;
@@ -41,7 +41,7 @@
 .menu-hero-image {
     width: 100%;
     height: 500px;
-    max-width: none;
+    max-width: 100%;
     object-fit: cover;
     object-position: center;
     display: block;

@@ -1,9 +1,11 @@
+/*Banan Shatnawi*/
 .olive-mark {
-    background-color: #C9D4BC;
-    color: #2C3325;
+    background-color: #EFE6D5;
+    color:#590d06;
     padding: 2px 6px;
     border-radius: 4px;
 }
+
 
 h2 {
     color: #542D29;
@@ -26,11 +28,21 @@ h3 + p {
     margin-top: 0;
 }
 .resv-fieldset {
-    max-width: 450px;
+    max-width: 520px;
     margin: 20px auto;
     border: 2px solid #414B36;
     border-radius: 12px;
-    padding: 16px 20px;
+    padding: 22px 26px;
+    background-color:#c4d6c4;
+    color:#590d06;
+
+}
+.about-fieldset {
+    max-width: 1420px;
+    margin: 10px auto;
+    border: 2px solid #414B36;
+    border-radius: 12px;
+    padding: 12px 18px;
     background-color:#c4d6c4;
     color:#590d06;
 

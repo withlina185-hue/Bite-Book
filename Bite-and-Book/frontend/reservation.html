@@ -1,45 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Reserve a Table - Bite & Book</title>
+    <title>Reserve a Table - Bite & Book</title><!--Banan shatnawi-->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/ab-resvstyle.css">
+    <link rel="stylesheet" href="css/navstyle.css">
     
      
 </head>
 <body class="resv-page">
-<div style="background-color:#F8F5EF;width:100%;height:90px;border-bottom:3px solid #414B36;">
-<div style="width:120px;height:150px; ">
-    
-    <img src="image/logo2.jpg" alt="Logo" style="height:90px;width:110px;background-size:cover">
-    <div style="position:relative;top:-100px;left:400px;">
-        <table style="margin-left:310px;margin-top:20px;">
-            <tr>
-                <th><a href="home.html">Home</a></th>
-                <th><a href="menu.html">Menu</a></th>
-                <th><a href="build-meal.html">Build Meal</a></th>
-                <th style="background-color:#A3AD91;"><a href="reservation.html">Reserve Table</a></th>
-                <th><a href="subscription.html">Subscription</a></th>
-                
-                <th><a href="about.html">About</a></th>
-                <th style="background-color:#C9D4BC;"><a href="login.html">Login</a></th>
-            </tr>
-            
-        </table>
-    </div>
-
-</div>
-
-</div>
-<main style= "text-align:center;">
+    <!--Navigation section-->
+  <header>
+    <a href="home.html"><img src="image/logo2.jpg" alt="Logo"></a>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="build-meal.html">Build Meal</a>
+        <a href="reservation.html" class="active">Reserve Table</a>
+        <a href="subscription.html">Subscription</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+        <a href="account.html">My Account</a>
+    </nav>
+  </header>
+  <main>
     <!--Intro Section -->
-    <section>
+    <section style="text-align:center">
         <h1 >Reserve Your Table</h1>
         <p>Pick your preferred date, time, and guest count—then you can <mark class="olive-mark">pre-order from our menu.</mark></p>
     </section>
     <!--Form Section-->
-    <section>
+    <section style="display:flex; justify-content: center; gap: 36px; flex-wrap: wrap; margin: 25px auto;">
         <form id="rev_form">
             <fieldset class="resv-fieldset">
                 <legend><strong>Reservation Info:</strong></legend>
@@ -65,21 +57,20 @@
                             <input type="radio" id="preorder_no" name="preorder_choice" value="no">
                             No, take me to <strong>Login</strong> to complete my reservation
                         </label><br><br>
-                        <button type="button" id="continue-btn">Continue</button>
+                        <button type="submit" style="background-color:#414B36; color:#F8F5EF; border:none; border-radius:8px; padding:8px 22px; font-family: sans-serif; font-size:15px; cursor:pointer;">Continue</button>
                         <p id="msg"></p>
             </fieldset>
         </form>
-
+         <img src="image/table.jpg" alt="resturant photo"  style="max-width:450px;width:100%;height: 475px;margin-top: 20px; object-fit: cover; border-radius: 12px; border: 2px solid #414B36;">
     </section>
-</main>
-<script src="js/b-reservation.js"></script>
-<footer style="width: 100%; min-height: 80px; background-color: #414B36; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; box-sizing: border-box; margin-top: 40px; flex-wrap: wrap; gap: 16px;">
-    <p style="color: #e5e0d7; margin: 0; font-family: 'Roboto Slab', serif; font-size: 18px; font-weight: 700;">
-        Bite&BooK
-    </p>
+  </main>
+ 
+  <!--Footer section-->
+ <footer style="display:flex; justify-content:space-between; align-items:center;  padding:18px 40px; background:#414B36; color:#F8F5EF;">
+  <span>Bite & Book</span>
+  <span>Copyright © 2026 Bite & Book. All rights reserved.</span>
+ </footer>
 
-    <p style="color: #e5e0d7; margin: 0; font-family: 'Roboto Slab', serif; font-size: 16px; font-weight: 500;">
-        Copyright © 2026 Bite&BooK. All rights reserved.
-    </p>
-</footer>
-</body></html>
+ <script src="js/b-reservation.js"></script>
+</body>
+</html>

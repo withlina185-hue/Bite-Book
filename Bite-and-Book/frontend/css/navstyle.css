@@ -1,0 +1,33 @@
+/*Banan Shatnawi*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 32px;
+  background: #F8F5EF;
+  border-bottom: 1px solid rgba(65, 75, 54, .14);
+}
+header img {
+  height: 52px;
+  display: block;
+}
+header nav {
+  display: flex;
+  gap: 6px;
+}
+header nav a {
+  color: #765641;
+  text-decoration: none;
+  font: 500 .92rem/1 "Trebuchet MS", sans-serif;
+  padding: 8px 13px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: .2s;
+}
+header nav a:hover,
+header nav a.active {
+  background: #A3AD91;
+  color: #414B36;
+}

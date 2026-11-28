@@ -1,77 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About Us - Bite & Book</title>
+    <title>About Us - Bite & Book</title><!--Banan shatnawi-->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/ab-resvstyle.css">
-    
+    <link rel="stylesheet" href="css/navstyle.css">
 </head>
+
 <body>
-<div style="background-color:#F8F5EF;width:100%;height:90px;border-bottom:3px solid #414B36;">
-<div style="width:120px;height:150px; ">
-    
-    <img src="image/logo2.jpg" alt="Logo" style="height:90px;width:110px;background-size:cover">
-    <div style="position:relative;top:-100px;left:400px;">
-        <table style="margin-left:310px;margin-top:20px;">
-            <tr>
-                <th><a href="home.html">Home</a></th>
-                <th><a href="menu.html">Menu</a></th>
-                <th><a href="build-meal.html">Build Meal</a></th>
-                <th><a href="reservation.html">Reserve Table</a></th>
-                <th><a href="subscription.html">Subscription</a></th>
-                
-                <th style="background-color:#A3AD91;"><a href="about.html">About</a></th>
-                <th style="background-color:#C9D4BC;"><a href="login.html">Login</a></th>
-            </tr>
-            
-        </table>
-    </div>
-
-</div>
-
-</div>
+    <!--Navigation section-->
+    <header>
+        <a href="home.html"><img src="image/logo2.jpg" alt="Logo"></a>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="build-meal.html">Build Meal</a>
+            <a href="reservation.html">Reserve Table</a>
+            <a href="subscription.html" >Subscription</a>
+            <a href="about.html" class="active">About</a>
+            <a href="login.html">Login</a>
+            <a href="account.html">My Account</a>
+        </nav>
+    </header>
 
 <main>
+    <h1 style="text-align:center">Crafted Beyond Expectations</h1>
     <!--Intor & Name Meaning section-->
-    <section>
-        <h1>Crafted Beyond Expectations</h1>
+    <fieldset class="about-fieldset"> 
+        <legend>About & Our Name</legend>
+        
         <p><b>Welcome to Bite & Book</b>, where we created this platform to make healthy dining effortless—bringing together table reservations, custom meal-building tailored to your preferences and caloric needs, and flexible monthly subscription packages in one simple place.</p>
         <p>We hope your experience with us is truly outstanding—matching what you envisioned and exceeding your expectations.</p>
         
         <div>
             <p>Our name reflects the two core pillars of what we offer:</p>
-            <p><mark class="olive-mark">Bite</mark> stands for delicious, nutritionally balanced meals.</p>
-            <p><mark class="olive-mark">Book</mark> refers directly to our seamless booking services—whether reserving a table or scheduling your monthly subscription.</p>
+            <p><mark class ="olive-mark" ><strong>Bite</strong></mark> stands for delicious, nutritionally balanced meals.</p>
+            <p><mark class ="olive-mark" ><strong>Book</strong></mark> refers directly to our seamless booking services—whether reserving a table or scheduling your monthly subscription.</p>
         </div>
      
-    </section>
+   </fieldset>
     
     <!--Vision & Missioon section-->
-    <section>
-        <h2> Our Vision </h2>
+    <fieldset class="about-fieldset"> 
+        <legend>Our Vision </legend>
+    
         <p>We don’t just care about delivering your order -<mark class="olive-mark">Our Vision</mark> is to cultivate a better world by building healthier communities and connecting people to real food made with integrity and high quality.</p>
-        
-        <h3>Our Mission</h3>
+    </fieldset>
+    <fieldset class="about-fieldset"> 
+        <legend>Our Mission </legend>
+      
         <p>Whether you want to architect your own meal down to every detail, honor us with your visit and enjoy a table without a long wait, or relieve yourself for the entire month from the exhaustion of cooking and the daily question of what to eat—we handle the kitchen, so all you have to do is sit back and enjoy.</p>
     
-    </section>
+    </fieldset>
  
      <!-- Contact & Hours Section -->
-    <section>
-        <h2>Contact & Hours</h2>
-        <p><strong>Opening Hours:</strong> Daily, 8:00 AM to 12:00 PM</p>
-        <p><strong>Our Location:</strong> Petra Street, Irbid — reach out anytime at <strong>+962 7889966123</strong> for inquiries, reservations, or custom subscription plans.</p>
-    </section>
-</main>
-<footer style="width: 100%; min-height: 80px; background-color: #414B36; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; box-sizing: border-box; margin-top: 40px; flex-wrap: wrap; gap: 16px;">
-    <p style="color: #e5e0d7; margin: 0; font-family: 'Roboto Slab', serif; font-size: 18px; font-weight: 700;">
-        Bite&BooK
-    </p>
-
-    <p style="color: #e5e0d7; margin: 0; font-family: 'Roboto Slab', serif; font-size: 16px; font-weight: 500;">
-        Copyright © 2026 Bite&BooK. All rights reserved.
-    </p>
-</footer>
+    <fieldset class="about-fieldset"> 
+        <legend>Contact & Hours</legend>
+        <p><mark class ="olive-mark" ><strong>Opening Hours</strong></mark>  Daily, 8:00 AM to 12:00 PM</p>
+        <p><mark class="olive-mark"><strong>Our Location:</strong></mark> Petra Street, Irbid — reach out anytime at <strong>+962 7889966123</strong> for inquiries, reservations, or custom subscription plans.</p>
+    </fieldset>
+  </main>
+  <!--Footer section-->
+ <footer style="display:flex; justify-content:space-between; align-items:center; padding:18px 40px; background:#414B36; color:#F8F5EF;">
+  <span>Bite & Book</span>
+  <span>Copyright © 2026 Bite & Book. All rights reserved.</span>
+ </footer>
 </body>
 </html>

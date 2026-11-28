@@ -1,3 +1,5 @@
+/*Banan Shatnawi*/
+
 //valid time and date
 var dateInput = document.getElementById("rev_date");
 var timeInput = document.getElementById("rev_time");

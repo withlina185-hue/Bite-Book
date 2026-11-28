@@ -1,3 +1,4 @@
+/*Leena Nofal*/
 .bite-pages {
   --cream: #f6f2eb;
   --paper: #fffdf8;
@@ -44,68 +45,7 @@
 .bite-pages h3 { 
     font-size: .98rem;
 }
-.bite-header {
-  min-height: 71px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 0 clamp(12px, 9vw, 116px) 0 10px;
-  background: #f6f3ed;
-  border-bottom: 2px solid #535e46;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-.bite-header nav, .header-actions, .brand, .inline-actions {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.bite-header nav {
-    margin-left: auto; 
-}
 
-.bite-header nav a, .bite-header nav span, .bite-header .login-link {
-  display: grid;
-  place-content: center;
-  min-height: 36px;
-  min-width: 65px;
-  padding: 5px 12px;
-  border-radius: 16px;
-  color: var(--brown);
-  font-size: .76rem;
-  line-height: 1.15;
-  font-weight: 700;
-  text-align: center;
-}
-.bite-header .login-link { 
-    min-width: 74px;
-    background: #c8d4bb;
-}
-.bite-header nav a[aria-current], .bite-header nav a:hover,
-.bite-header .bag[aria-current] {
-   
-    background: #a5b194; 
-}
-.brand img { display: block;
-    width: 76px;
-    height: 66px; 
-    object-fit: contain; 
-}
-
-.bite-header .bag {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 13px;
-  color: var(--green);
-}
-.bite-header .bag:hover { 
-    
-    background: #dce4d2; 
-}
 .bite-main { 
     width: min(92%, 1280px);
     min-height: 75vh; margin: auto; 

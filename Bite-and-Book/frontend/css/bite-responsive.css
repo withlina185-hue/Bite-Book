@@ -1,30 +1,6 @@
+/*Leena Nofal*/
 @media (max-width: 850px) {
 
-.bite-header { 
-    position: static;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    gap: 3px 12px;
-    padding: 0 12px 8px; 
-    }
-
-.bite-header nav { 
-    order: 3; 
-    width: 100%;
-    margin-left: 0; 
-    gap: 4px; 
-    justify-content: center; }
-
-.bite-header nav a, .bite-header nav span { 
-    min-width: 0; 
-    padding-inline: 9px; 
-    
-    }
-  
-.bite-main { 
-    padding-top: 30px;
-    }
-    
 .builder-grid, .account-grid { 
     grid-template-columns: 1fr; }
 
@@ -49,7 +25,4 @@
 
 .meal-types strong { 
     font-size: .85rem; }
-  
-.header-actions 
-    { gap: 8px; }
 }
